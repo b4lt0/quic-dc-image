@@ -1,0 +1,65 @@
+###############################################################################
+#  QW PROJECT – SPEED‑OPTIMISED .dockerignore
+#  Copy this file next to the Dockerfile.
+###############################################################################
+
+########################
+# 1. Version‑control
+########################
+.git
+.gitmodules
+.gitignore
+.gitattributes
+
+########################
+# 2. OS / editor trash
+########################
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+*.vscode*
+.idea/
+
+########################
+# 3. Build artefacts
+########################
+# Top‑level or nested CMake / make output
+*_build/
+*/_build/
+build/
+*/build/
+CMakeFiles/
+*/CMakeFiles/
+CMakeCache.txt
+*/CMakeCache.txt
+cmake_install.cmake
+*/cmake_install.cmake
+Makefile
+*/Makefile
+
+# Object & archive files
+*.o
+*.lo
+*.a
+*.la
+*.so
+*.dll
+*.dylib
+*.exe
+*.dSYM
+*.out
+*.obj
+
+# Generated thrift/proto code
+gen-cpp*
+gen-cpp2*
+
+########################
+# 4. Proxygen heavy dirs created *after* the first compile
+########################
+proxygen/proxygen/_build/
+proxygen/proxygen/_build/**
+
+
